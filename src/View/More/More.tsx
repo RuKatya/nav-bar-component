@@ -1,6 +1,6 @@
-import React from 'react'
+import { FC } from 'react';
 
-const More = () => {
+const More: FC = () => {
     return (
         <div>
             <h1>MORE</h1>

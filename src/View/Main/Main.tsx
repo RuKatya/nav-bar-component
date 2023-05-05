@@ -1,4 +1,6 @@
-const Main = () => {
+import { FC } from 'react';
+
+const Main: FC = () => {
     return (
         <div>
             <h1>MAIN</h1>

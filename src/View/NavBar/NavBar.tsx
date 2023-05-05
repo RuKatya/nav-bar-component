@@ -1,10 +1,19 @@
+import { FC, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom'
 import { useResponsivity } from '../../helper/useWidth'
-import { useEffect, useState } from 'react';
 
-const NavBar = () => {
-    const [toggleMenu, setToggleMenu] = useState(false);
-    const isMobile = useResponsivity()
+interface Link {
+    to: string,
+    title: string
+}
+const links: Array<Link> = [
+    { to: "/", title: "Home" },
+    { to: "/about", title: "About" },
+    { to: "/more", title: "More" }
+]
+const NavBar: FC = () => {
+    const [toggleMenu, setToggleMenu] = useState<boolean>(false);
+    const isMobile: boolean = useResponsivity()
 
     useEffect(() => {
         isMobile === false && setToggleMenu(false)
@@ -16,9 +25,9 @@ const NavBar = () => {
 
             {(toggleMenu || !isMobile) && (
                 <div className='navbar__navigation'>
-                    <NavLink to="/" onClick={() => setToggleMenu(false)}>Home</NavLink>
-                    <NavLink to="/about" onClick={() => setToggleMenu(false)}>About</NavLink>
-                    <NavLink to="/more" onClick={() => setToggleMenu(false)}>More</NavLink>
+                    {links.map((link, index) => (
+                        <NavLink key={index} to={link.to} onClick={() => setToggleMenu(false)}>{link.title}</NavLink>
+                    ))}
                 </div>
             )}
         </nav>

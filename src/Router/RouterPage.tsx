@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 import Main from '../View/Main/Main';
@@ -25,12 +26,8 @@ const router = createBrowserRouter([
     }
 ]);
 
-
-
-const RouterPage = () => {
-    return (
-        <RouterProvider router={router} />
-    )
+const RouterPage: FC = () => {
+    return <RouterProvider router={router} />
 }
 
 export default RouterPage

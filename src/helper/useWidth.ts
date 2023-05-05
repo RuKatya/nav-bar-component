@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-export const useResponsivity = () => {
+export const useResponsivity = (): boolean => {
     const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth > 768 ? false : true)
 
     useEffect(() => {
