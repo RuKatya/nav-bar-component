@@ -1,7 +1,12 @@
 {
-  "name": "nav-bar-component",
+  "name": "@ru-katya/nav-bar-component-responsive",
+  "description": "It is navbar component",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RuKatya/nav-bar-component.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
