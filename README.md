@@ -12,22 +12,10 @@ This is a responsive navbar component created by using:
 This project includes 3 pages for a comfortable demonstration of component work.
 
 ## Running
-
-1. Download the files to your computer
-2. Install the dependencies by using:
+2. Install:
 
 ```
-npm install
-or
-yarn install
-```
-
-3. Run the project locally by using:
-
-```
-npm start
-or
-yarn start
+npm i @rukatya/nav-bar-component-responsive
 ```
 
 ## FREE FEEL CHANGE THE STYLE OF COMPONENT
