@@ -1,10 +1,32 @@
+:root {
+  --navbar-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  --navbar-font-weight: 600;
+  --navbar-color: white;
+  --navbar-font-size: clamp(16px, 1vw, 24px);
+  --navbar-background-color: rgb(86, 178, 249);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--navbar-font-family);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: var(--navbar-background-color);
+  padding: 1% 0%;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    position: relative;
+    padding: 3% 0%;
+  }
 }
 
 .navbar__btnMenu {
@@ -14,6 +36,12 @@ body {
 @media only screen and (max-width: 768px) {
   .navbar__btnMenu {
     display: block;
+    border: none;
+    background: none;
+    font-size: var(--navbar-font-size);
+    margin-left: 2%;
+    color: var(--navbar-color);
+    font-weight: var(--navbar-font-weight);
   }
 }
 
@@ -25,5 +53,32 @@ body {
 @media only screen and (max-width: 768px) {
   .navbar__navigation {
     flex-direction: column;
+    justify-content: center;
+    background-color: rgba(126, 195, 248);
+    width: 40%;
+    position: absolute;
+    transform: translateY(15%);
+    left: 2vw;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px grey;
+    z-index: 0;
   }
+}
+
+.navbar__navigation a {
+  margin: 0% 3%;
+  color: var(--navbar-color);
+  font-weight: var(--navbar-font-weight);
+  font-size: var(--navbar-font-size);
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar__navigation a {
+    margin: 10%;
+    width: 35%;
+  }
+}
+
+.active {
+  border-bottom: 1px solid var(--navbar-color);
 }
