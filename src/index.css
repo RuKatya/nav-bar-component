@@ -18,7 +18,7 @@ a {
 }
 
 nav {
-  background-color: var(--navbar-background-color);
+  /* background-color: var(--navbar-background-color); */
   padding: 1% 0%;
 }
 
@@ -38,10 +38,10 @@ nav {
     display: block;
     border: none;
     background: none;
-    font-size: var(--navbar-font-size);
+    /* font-size: var(--navbar-font-size); */
     margin-left: 2%;
-    color: var(--navbar-color);
-    font-weight: var(--navbar-font-weight);
+    /* color: var(--navbar-color); */
+    /* font-weight: var(--navbar-font-weight); */
   }
 }
 
@@ -54,7 +54,7 @@ nav {
   .navbar__navigation {
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(126, 195, 248);
+    /* background-color: rgba(126, 195, 248); */
     width: 40%;
     position: absolute;
     transform: translateY(15%);
@@ -67,9 +67,9 @@ nav {
 
 .navbar__navigation a {
   margin: 0% 3%;
-  color: var(--navbar-color);
+  /* color: var(--navbar-color);
   font-weight: var(--navbar-font-weight);
-  font-size: var(--navbar-font-size);
+  font-size: var(--navbar-font-size); */
 }
 
 @media only screen and (max-width: 768px) {

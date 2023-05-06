@@ -1,5 +1,69 @@
 # Navigation Navbar Component
 
+![navbar gif example](./navbar-gif.gif)
+
+## Getting started
+
+- Install `@rukatya/nav-bar-component-responsive`
+
+  - By using `npm`
+
+  ```
+  npm i @rukatya/nav-bar-component-responsive
+  ```
+
+- Import the component where you want to use it:
+
+  ```
+  import NavBar from '@rukatya/nav-bar-component-responsive'
+  ```
+
+- Create a list of links for Navbar:
+
+  ```js
+  const links = [
+    { to: "/", title: "Home" },
+    { to: "/about", title: "About" },
+    { to: "/more", title: "More" },
+  ];
+  ```
+
+- Add it to your React element with links to your project:
+
+  ```js
+  function NavBarComponent() {
+    return <NavBar links={links} />;
+  }
+  ```
+
+- You can change the style of the component by adding:
+
+  - userFontFamily (string)
+  - userFontWeight (number)
+  - userBackgroundColor (string)
+  - userColor (string)
+  - userFontSize (string)
+
+  ```js
+  function NavBarComponent() {
+    return (
+      <NavBar
+        links={links}
+        userFontWeight={100}
+        userFontSize={"clamp(20px, 1.1vw, 28px)"}
+      />
+    );
+  }
+  ```
+
+That's it, you're ready to go!
+
+## Questions?
+
+Feel free to send me a message on [LinkedIn](https://www.linkedin.com/in/katya-rukosuev/).
+If you want to report a bug, please [submit an issue](https://github.com/RuKatya/nav-bar-component/issues/new)!
+
+<!--
 ## About
 
 This is a responsive navbar component created by using:
@@ -12,7 +76,8 @@ This is a responsive navbar component created by using:
 This project includes 3 pages for a comfortable demonstration of component work.
 
 ## Running
-2. Install:
+
+Installing:
 
 ```
 npm i @rukatya/nav-bar-component-responsive
@@ -23,4 +88,4 @@ npm i @rukatya/nav-bar-component-responsive
 The component is [styled](./src/index.css) here.
 Feel free to cheng the `:root` variables.
 
-## Hope that will help you! Enjoy!!!
+## Hope that will help you! Enjoy!!! -->
