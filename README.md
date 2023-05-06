@@ -4,12 +4,12 @@
 
 ## Getting started
 
-- Install `@rukatya/nav-bar-component-responsive`
+- Install `nav-bar-component-responsive`
 
   - By using `npm`
 
   ```
-  npm i @rukatya/nav-bar-component-responsive
+  npm i nav-bar-component-responsive
   ```
 
 - Import the component where you want to use it:
